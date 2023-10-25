@@ -10,7 +10,7 @@ sudo mkdir homebrew
 sudo chown $(whoami):admin homebrew
 cd homebrew
 curl -L https://github.com/Homebrew/brew/tarball/master | tar xz -C . --strip-componets 1
-echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.bashrc
+# echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.bashrc # bashrc記載済みなのでコメントアウトしておく
 source ~/.bashrc
 
 # check architecture

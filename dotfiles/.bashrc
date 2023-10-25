@@ -20,3 +20,7 @@ eval "$(rbenv init -)"
 # nodenv
 export PATH="$HOME/.anyenv/envs/nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+
+# goenv
+export PATH="$HOME/.anyenv/envs/goenv/bin:$PATH"
+eval "$(goenv init -)"
