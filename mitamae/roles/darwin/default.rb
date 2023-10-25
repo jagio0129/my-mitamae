@@ -6,5 +6,6 @@ node.reverse_merge!(
 )
 
 include_cookbook 'dotfile'
-# include_cookbook 'anyenv'
-# include_cookbook 'rbenv'
+
+include_cookbook 'anyenv'
+include_cookbook 'rbenv'
