@@ -12,3 +12,6 @@ define :dotfile do
 end
 
 dotfile ".gemrc"
+dotfile ".bash_profile"
+dotfile ".bashrc"
+dotfile ".bash_aliases"
