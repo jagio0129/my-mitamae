@@ -17,12 +17,12 @@ bash setup.sh
 
 #### run
 ```shell
-/usr/local/bin/mitamae local --node-yaml ./node.yml my-mitamae/mitamae/roles/darwin/default.rb
+/usr/local/bin/mitamae local --node-yaml ./node.yml ./mitamae/roles/darwin/default.rb
 ```
 
 #### dry-run
 ```shell
-/usr/local/bin/mitamae local --dry-run --node-yaml ./node.yml my-mitamae/mitamae/roles/darwin/default.rb
+/usr/local/bin/mitamae local --dry-run --node-yaml ./node.yml ./mitamae/roles/darwin/default.rb
 ```
 
 ### 参考
