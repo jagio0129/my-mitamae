@@ -36,3 +36,4 @@ dotfiles/配下に.hogeファイルを設置すれば、`/Users/<your_name>/`配
 ### 参考
 - [ローカルの開発環境構築に mitamae を導入した](https://lime1024.hateblo.jp/entry/2021/05/12/233622)
 - [k0kubun/dotfiles](https://github.com/k0kubun/dotfiles)
+- [itamae-kitchen/itamae](https://github.com/itamae-kitchen/itamae)
