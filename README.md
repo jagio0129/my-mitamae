@@ -12,6 +12,10 @@ cd <this repository>
 cp node.yml.sample node.yml
 # node.ymlを必要に応じて修正
 
+# for vim submodule
+git submodule init
+git submodule update
+
 bash setup.sh
 ```
 
