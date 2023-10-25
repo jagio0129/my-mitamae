@@ -13,6 +13,10 @@ export PS1='\[\e[0;35m\][\u@\h \W]\[\e[0;36m\]\n\[\e[0;35m\]\$ \[\e[0;0m\]'
 export PATH="/opt/homebrew/bin:$PATH"
 
 # rbenv
-export PATH="~/.anyenv/envs/rbenv/bin:$PATH"
-export PATH="~/.anyenv/envs/rbenv/shims:$PATH"
+export PATH="$HOME/.anyenv/envs/rbenv/bin:$PATH"
+export PATH="$HOME/.anyenv/envs/rbenv/shims:$PATH"
 eval "$(rbenv init -)"
+
+# nodenv
+export PATH="$HOME/.anyenv/envs/nodenv/bin:$PATH"
+eval "$(nodenv init -)"

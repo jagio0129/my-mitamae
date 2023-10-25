@@ -1,6 +1,6 @@
 package 'rbenv'
 
-anyenv_dir = "/Users/jagio/.anyenv"
+anyenv_dir = "#{node[:home]}/.anyenv"
 
 # install rbenv
 execute 'anyenv install rbenv' do
@@ -19,6 +19,8 @@ end
 
 # install others version
 other_versions = node[:rbenv][:others]
+return if other_versions.nil?
+
 other_versions.each do |version|
   execute "rbenv install #{version}" do
     not_if "rbenv versions | grep #{version}"

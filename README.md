@@ -25,6 +25,10 @@ bash setup.sh
 /usr/local/bin/mitamae local --dry-run --node-yaml ./node.yml ./mitamae/roles/darwin/default.rb
 ```
 
+### dotfileについて
+
+dotfiles/配下に.hogeファイルを設置すれば、`/Users/<your_name>/`配下からシンボリックリンクを貼って適応される。(config.fishだけ例外)
+
 ### 参考
 - [ローカルの開発環境構築に mitamae を導入した](https://lime1024.hateblo.jp/entry/2021/05/12/233622)
 - [k0kubun/dotfiles](https://github.com/k0kubun/dotfiles)

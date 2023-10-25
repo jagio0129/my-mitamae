@@ -1,7 +1,5 @@
 package 'anyenv'
 
-home_dir = "/Users/jagio"
-
 execute 'install anyenv' do
   command 'brew install anyenv'
   command 'anyenv init'
@@ -10,17 +8,17 @@ execute 'install anyenv' do
 end
 
 # anyenvで入れた*env系を一括でアップデートしてくれるやつ
-directory "#{home_dir}/.anyenv/plugins" do
+directory "#{node[:home]}/.anyenv/plugins" do
   mode "775"
   owner "jagio"
   group "staff"
 end
 
-git "#{home_dir}/.anyenv/plugins/anyenv-update" do
+git "#{node[:home]}/.anyenv/plugins/anyenv-update" do
   repository "https://github.com/znz/anyenv-update.git"
 end
 
-git "#{home_dir}/.anyenv/plugins/anyenv-git" do
+git "#{node[:home]}/.anyenv/plugins/anyenv-git" do
   repository "https://github.com/znz/anyenv-git.git"
 end
 
