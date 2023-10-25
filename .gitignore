@@ -1,3 +1,2 @@
 node.yml
 dotfiles/.vim/bundle/*
-!dotfiles/.vim/bundle/neobundle.vim
