@@ -15,3 +15,5 @@
 [user]
 	name = jagio
 	email = jagio0129@gmail.com
+[init]
+	defaultBranch = main
