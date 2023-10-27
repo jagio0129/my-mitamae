@@ -1,8 +1,5 @@
-execute 'install anyenv' do
-  command 'brew install anyenv'
-  command 'anyenv init'
-  command '/bin/bash -lc "anyenv install --init"'
-  not_if "brew list | grep anyenv"
+git "#{node[:home]}/.anyenv" do
+  repository "https://github.com/anyenv/anyenv"
 end
 
 # anyenvで入れた*env系を一括でアップデートしてくれるやつ
