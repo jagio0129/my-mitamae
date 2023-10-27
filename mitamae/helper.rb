@@ -4,6 +4,14 @@ MItamae::RecipeContext.class_eval do
     include_recipe File.join(root, 'cookbooks', name, 'recipe')
   end
 
+  # cask list
+  #   https://formulae.brew.sh/cask/
+  def cask(name)
+    execute "brew install --cask #{name}" do
+      not_if "brew list --cask #{name}"
+    end
+  end
+
   # anyenv経由でinstallしたい*envのヘルパー
   #   ex) hogenv 'rbenv'
   def hogenv(name)
