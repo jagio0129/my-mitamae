@@ -18,3 +18,7 @@
 [init]
   # https://devlights.hatenablog.com/entry/2021/05/16/125421
 	defaultBranch = main
+[merge]
+	ff = false
+[pull]
+	ff = only
