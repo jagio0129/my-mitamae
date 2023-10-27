@@ -9,6 +9,9 @@ fi
 # bash-completion
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
+# MacOSのデフォルトシェルのメッセージを非表示に
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # プロンプトに色付け
 export PS1='\[\e[0;35m\][\u@\h \W]\[\e[0;36m\]\n\[\e[0;35m\]\$ \[\e[0;0m\]'
 
