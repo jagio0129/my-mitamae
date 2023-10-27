@@ -17,7 +17,7 @@ alias be="bundle exec"
 alias dc="sudo docker-compse"
 alias start="bundle exec rails s -b 0.0.0.0 -p 3000"
 alias zest='bunddle exec zeus test'
-alias bulk_rspec="bundle exec ruby ~/dotfiles/bulk_rspec.rb"
+alias bulk_rspec="bundle exec ruby ~/bulk_rspec.rb"
 alias review='bundle exec rake db:create db:migrate RAILS_ENV=test'
 alias relogin='exec $SHELL -l'
 alias tmux='tmux -2 new-session \; source-file ~/.tmux.session.conf'
