@@ -4,15 +4,6 @@ MItamae::RecipeContext.class_eval do
     include_recipe File.join(root, 'cookbooks', name, 'recipe')
   end
 
-  # Mac Homebrewのヘルパー
-  #   ex) brew_package 'git'
-  def brew_package(name)
-    execute "install #{name}" do
-      command "brew install #{name}"
-      not_if "brew list | grep #{name}"
-    end
-  end
-
   # anyenv経由でinstallしたい*envのヘルパー
   #   ex) hogenv 'rbenv'
   def hogenv(name)

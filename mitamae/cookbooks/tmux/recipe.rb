@@ -1,1 +1,1 @@
-brew_package 'tmux'
+package 'tmux'
