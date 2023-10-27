@@ -1,5 +1,3 @@
-package 'anyenv'
-
 execute 'install anyenv' do
   command 'brew install anyenv'
   command 'anyenv init'

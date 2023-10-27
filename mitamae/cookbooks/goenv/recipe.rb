@@ -1,5 +1,3 @@
-package 'goenv'
-
 anyenv_dir = "#{node[:home]}/.anyenv"
 
 # install goenv

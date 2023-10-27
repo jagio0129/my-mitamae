@@ -1,5 +1,3 @@
-package 'rbenv'
-
 anyenv_dir = "#{node[:home]}/.anyenv"
 
 # install rbenv

@@ -1,5 +1,3 @@
-package 'fish'
-
 # install fish
 execute 'brew install fish' do
   not_if "brew list | grep fish"

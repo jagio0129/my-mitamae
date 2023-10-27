@@ -1,5 +1,3 @@
-package 'nodenv'
-
 anyenv_dir = "/Users/jagio/.anyenv"
 
 # install nodenv
