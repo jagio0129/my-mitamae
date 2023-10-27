@@ -1,7 +1,5 @@
 # install fish
-execute 'brew install fish' do
-  not_if "brew list | grep fish"
-end
+package 'fish'
 
 # install fisherman
 execute 'curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher' do
