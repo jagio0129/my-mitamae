@@ -4,6 +4,8 @@ MItamae::RecipeContext.class_eval do
     include_recipe File.join(root, 'cookbooks', name, 'recipe')
   end
 
+  # Mac Homebrewのヘルパー
+  #   ex) brew_package 'git'
   def brew_package(name)
     execute "install #{name}" do
       command "brew install #{name}"
@@ -11,6 +13,8 @@ MItamae::RecipeContext.class_eval do
     end
   end
 
+  # anyenv経由でinstallしたい*envのヘルパー
+  #   ex) hogenv 'rbenv'
   def hogenv(name)
     anyenv_dir = "#{node[:home]}/.anyenv"
 
@@ -36,6 +40,16 @@ MItamae::RecipeContext.class_eval do
       execute "#{name} install #{version}" do
         not_if "#{name} versions | grep #{version}"
       end
+    end
+  end
+
+  # cookbooks配下のすべてのレシピを実行する
+  #   ※ 実行順がディレクトリ名順になるので注意
+  def all_include_cookbook(ignores=[])
+    cookbooks = Dir.glob('./mitamae/cookbooks/*').map {|c| c.split("/").last }
+    cookbooks.each do |cookbook|
+      next if ignores.include?(cookbook)
+      include_cookbook cookbook
     end
   end
 end
