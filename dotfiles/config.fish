@@ -3,13 +3,8 @@
 ###############
 # anyenv設定は~/.config/fish/config.d/に
 
-alias edit-fish='vim ~/.config/fish/config.fish'
-alias dc='docker compose'
-alias mycli-base='mycli -uroot -h 127.0.0.1 -P 3306'
-
-# rails
-alias be='bundle exec'
-alias start='bin/rails s -b 0.0.0.0'
+# alias
+source ~/.bash_aliases
 
 ##########
 # config #
@@ -17,9 +12,15 @@ alias start='bin/rails s -b 0.0.0.0'
 # ディレクトリの色を太字の青に
 #   https://nemoplus.hateblo.jp/entry/20090119/1232373540
 export LSCOLORS=Exfxcxdxbxegedabagacad
+set -U fish_color_command green
 
 #############
 # *env path #
 #############
 # anyenv
-set -x PATH $HOME/.anyenv/bin $PATH
+set -x PATH $HOME/.anyenv/bin $PATHgit
+
+# adb
+set -x PATH $HOME/Library/Android/sdk/ $PATH
+
+set -x JAVA_HOME /Applications/Android Studio.app/Contents/jbr/Contents/Home
