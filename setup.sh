@@ -5,12 +5,7 @@ set -o xtrace   # 実行するコマンドを逐一表示する
 
 # install homebrew(for M2 Mac)
 #   https://medium.com/geekculture/error-cannot-install-in-homebrew-on-arm-processor-in-intel-default-prefix-fd2e5f5fee88
-cd /opt
-sudo mkdir homebrew
-sudo chown $(whoami):admin homebrew
-cd homebrew
-curl -L https://github.com/Homebrew/brew/tarball/master | tar xz -C . --strip-componets 1
-# echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.bashrc # bashrc記載済みなのでコメントアウトしておく
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.bashrc # bashrc記載済みなのでコメントアウトしておく
 source ~/.bashrc
 
 # check architecture

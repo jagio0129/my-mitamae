@@ -1,4 +1,5 @@
 home: "/Users/<your name>"
+owner: <your name>
 rbenv:
   default: "3.2.2"
   others:

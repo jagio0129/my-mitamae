@@ -16,6 +16,8 @@
 [user]
 	name = jagio
 	email = jagio0129@gmail.com
+[includeIf "gitdir:~/work/repro/"]
+  path = ~/.gitconfig-repro
 [init]
   # https://devlights.hatenablog.com/entry/2021/05/16/125421
 	defaultBranch = main
