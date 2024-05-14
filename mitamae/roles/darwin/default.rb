@@ -9,7 +9,7 @@ include_cookbook 'bash'
 include_cookbook 'anyenv'
 
 # 先に実行されたいのでall_include_cookbookに渡さない
-ignores_cook_books = ["dotfiles"]
+ignores_cook_books = %w(dotfiles)
 
 all_include_cookbook(ignores_cook_books)
 

@@ -6,7 +6,7 @@ rbenv:
     - "3.1.4"
 nodenv:
   default: "19.9.0"
-  others:
+  others: # others入れない場合は `- ""` としないこと
 goenv:
   default: "1.21.3"
   others:
