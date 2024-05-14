@@ -18,7 +18,7 @@ set -U fish_color_command green
 # *env path #
 #############
 # anyenv
-set -x PATH $HOME/.anyenv/bin $PATHgit
+set -x PATH $HOME/.anyenv/bin $PATH
 
 # adb
 set -x PATH $HOME/Library/Android/sdk/ $PATH
