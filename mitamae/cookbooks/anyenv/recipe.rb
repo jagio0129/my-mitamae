@@ -5,7 +5,7 @@ end
 # anyenvで入れた*env系を一括でアップデートしてくれるやつ
 directory "#{node[:home]}/.anyenv/plugins" do
   mode "775"
-  owner "jagio"
+  owner node[:owner]
   group "staff"
 end
 

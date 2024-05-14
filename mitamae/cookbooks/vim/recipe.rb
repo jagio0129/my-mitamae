@@ -2,7 +2,7 @@ vim_bundle_path = "./dotfiles/.vim/bundle"
 
 directory "#{vim_bundle_path}" do
   mode "775"
-  owner "jagio"
+  owner node[:onwer]
   group "staff"
 end
 
