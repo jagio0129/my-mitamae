@@ -32,6 +32,13 @@ bash setup.sh
 /usr/local/bin/mitamae local --dry-run --node-yaml ./node.yml ./mitamae/roles/darwin/default.rb
 ```
 
+### 新規作成
+
+```shell
+./new-recipe.rb rbenv
+  => Created mitamae/cookbooks/rbenv/recipe.rb
+```
+
 ### dotfiles/について
 
 dotfiles/配下に.hogeファイルを設置すれば、`/Users/<your_name>/`配下からシンボリックリンクを貼って適応される。(config.fishだけ例外)
