@@ -10,3 +10,6 @@ nodenv:
 goenv:
   default: "1.21.3"
   others:
+tfenv:
+  default: "1.6."
+  others:
