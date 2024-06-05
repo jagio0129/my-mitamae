@@ -21,5 +21,6 @@ alias bulk_rspec="bundle exec ruby ~/bulk_rspec.rb"
 alias review='bundle exec rake db:create db:migrate RAILS_ENV=test'
 alias relogin='exec $SHELL -l'
 alias tmux='tmux -2 new-session \; source-file ~/.tmux.session.conf'
+alias tf='terraform'
 
 . ~/.bash_alias.repro

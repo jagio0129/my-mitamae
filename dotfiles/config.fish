@@ -21,6 +21,6 @@ set -U fish_color_command green
 set -x PATH $HOME/.anyenv/bin $PATH
 
 # adb
-set -x PATH $HOME/Library/Android/sdk/ $PATH
+#set -x PATH $HOME/Library/Android/sdk/ $PATH
 
-set -x JAVA_HOME /Applications/Android Studio.app/Contents/jbr/Contents/Home
+#set -x JAVA_HOME /Applications/Android Studio.app/Contents/jbr/Contents/Home
