@@ -45,6 +45,8 @@ MItamae::RecipeContext.class_eval do
   # cookbooks配下のすべてのレシピを実行する
   #   ※ 実行順がディレクトリ名順になるので注意
   def all_include_cookbook(ignores=[])
+    ignores << 'README.md'
+
     cookbooks = Dir.glob('./mitamae/cookbooks/*').map {|c| c.split("/").last }
     cookbooks.each do |cookbook|
       next if ignores.include?(cookbook)
