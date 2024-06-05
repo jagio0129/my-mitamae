@@ -32,9 +32,10 @@ bash setup.sh
 /usr/local/bin/mitamae local --dry-run --node-yaml ./node.yml ./mitamae/roles/darwin/default.rb
 ```
 
-### 新規作成
+### 新規レシピ作成
 
 ```shell
+# example
 ./new-recipe.rb rbenv
   => Created mitamae/cookbooks/rbenv/recipe.rb
 ```
