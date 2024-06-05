@@ -85,3 +85,7 @@ Mac向け。ウィンドウマネージャー
 https://note.com/asahi_ictrad/n/ne0fa976cd083
 
 rectangleで事足りるので消すかも
+
+#### gsed
+
+Mac向け。MacのsedコマンドはBSD系なのでGNU版(Linux系OS)にエイリアスするため。

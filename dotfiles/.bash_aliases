@@ -22,5 +22,6 @@ alias review='bundle exec rake db:create db:migrate RAILS_ENV=test'
 alias relogin='exec $SHELL -l'
 alias tmux='tmux -2 new-session \; source-file ~/.tmux.session.conf'
 alias tf='terraform'
+alias sed='gsed'
 
 . ~/.bash_alias.repro
