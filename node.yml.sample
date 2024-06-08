@@ -11,5 +11,5 @@ goenv:
   default: "1.21.3"
   others:
 tfenv:
-  default: "1.6."
+  default: "1.6.0"
   others:
