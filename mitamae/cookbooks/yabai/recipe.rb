@@ -1,5 +1,5 @@
-package 'koekeishiya/formulae/yabai'
-package 'koekeishiya/formulae/skhd'
+# package 'koekeishiya/formulae/yabai'
+# package 'koekeishiya/formulae/skhd'
 
 # https://github.com/koekeishiya/yabai
 # https://zenn.dev/yootaki/articles/d6ba758c63a315
