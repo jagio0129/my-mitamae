@@ -3,25 +3,25 @@
 	quotepath = false
 	pager = less -S
 [alias]
-  tree = log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
-  tr = log --graph --date=iso --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s %C(white)[%ad]\"
-  ad = add
-  st = status
-  ci = commit
-  co = checkout
-  fe = fetch
-  br = branch
-  cl = clean
-  di = diff
-  pdf = diff HEAD^ HEAD
-  pdn = pdf --name-only
+	tree = log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
+  	tr = log --graph --date=iso --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s %C(white)[%ad]\"
+  	ad = add
+  	st = status
+  	ci = commit
+  	co = checkout
+  	fe = fetch
+  	br = branch
+  	cl = clean
+  	di = diff
+  	pdf = diff HEAD^ HEAD
+  	pdn = pdf --name-only
 [user]
 	name = jagio
 	email = jagio0129@gmail.com
 [includeIf "gitdir:~/work/repro/"]
-  path = ~/.gitconfig-repro
+  	path = ~/.gitconfig-repro
 [init]
-  # https://devlights.hatenablog.com/entry/2021/05/16/125421
+	# https://devlights.hatenablog.com/entry/2021/05/16/125421
 	defaultBranch = main
 [merge]
 	ff = false
