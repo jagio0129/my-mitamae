@@ -12,7 +12,7 @@
   	fe = fetch
   	br = branch
   	cl = clean
-  	di = diff
+	df = diff
   	pdf = diff HEAD^ HEAD
   	pdn = pdf --name-only
 [user]
