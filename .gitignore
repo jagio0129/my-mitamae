@@ -1,2 +1,3 @@
 node.yml
 dotfiles/.vim/bundle/*
+.DS_Store

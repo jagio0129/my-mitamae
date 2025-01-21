@@ -36,7 +36,7 @@ bash setup.sh
 
 ```shell
 # example
-./new-recipe.rb rbenv
+./new-recipe.sh rbenv
   => Created mitamae/cookbooks/rbenv/recipe.rb
 ```
 
